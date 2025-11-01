@@ -8,11 +8,13 @@ local luasnip = require("luasnip")
 
 cmp.setup {
   completion = {
-    -- autocomplete = {
-    --     cmp.TriggerEvent.TextChanged,
-    -- },
-    autocomplete = false,
-    keyword_length = 2,
+    autocomplete = {
+      cmp.TriggerEvent.TextChanged,
+      cmp.TriggerEvent.InsertEnter,
+    },
+    completeopt = "menuone,noinsert,noselect",
+    -- autocomplete = false,
+    keyword_length = 0,
   },
   -- view = {
   --   entries = {
@@ -76,9 +78,9 @@ cmp.setup {
   }
 }
 
-vim.cmd([[
-  augroup CmpDebounceAuGroup
-    au!
-    au TextChangedI * lua require("marcus.cmp-debounce").debounce()
-  augroup end
-]])
+-- vim.cmd([[
+--   augroup CmpDebounceAuGroup
+--     au!
+--     au TextChangedI * lua require("marcus.cmp-debounce").debounce()
+--   augroup end
+-- ]])

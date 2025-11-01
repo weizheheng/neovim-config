@@ -16,7 +16,7 @@ set signcolumn=yes
 set cursorline
 set colorcolumn=120
 set textwidth=99
-highlight ColorColumn guibg=grey
+"highlight ColorColumn guibg=grey
 highlight WinSeparator guifg=#4C566A
 set clipboard=unnamedplus
 set splitbelow splitright

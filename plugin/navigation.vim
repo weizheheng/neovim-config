@@ -6,3 +6,5 @@ nnoremap <C-l> <C-w>l
 
 nnoremap <leader>sh <cmd>lua require('swap-buffers').swap_buffers('h')<CR>
 nnoremap <leader>sl <cmd>lua require('swap-buffers').swap_buffers('l')<CR>
+nnoremap <leader>sj <cmd>lua require('swap-buffers').swap_buffers('j')<CR>
+nnoremap <leader>sk <cmd>lua require('swap-buffers').swap_buffers('k')<CR>
